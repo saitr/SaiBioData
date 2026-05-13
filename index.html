@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>D Sai Thimma Reddy — Biodata</title>
+<title>D Sai Thimma Reddy — Marriage Biodata</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Noto+Sans+Telugu:wght@400;500;600&family=Noto+Sans+Kannada:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -437,7 +437,7 @@ span[data-lang].vis { display: inline; }
 
 /* ─── PROFESSION CARD ─── */
 .prof-card {
-  background: var(--ink);
+  background: #1e3a30;
   padding: 44px 48px;
   display: flex; align-items: center; justify-content: space-between; gap: 32px;
   position: relative; overflow: hidden;
@@ -625,7 +625,7 @@ span[data-lang].vis { display: inline; }
   .hero-right { padding: 32px 28px 60px; }
   .stat-strip { max-width: 100%; }
   .astro-row { grid-template-columns: 1fr; gap: 12px; }
-  .prof-card { flex-direction: column; padding: 32px 24px; }
+  .prof-card { flex-direction: column; align-items: flex-start; padding: 32px 24px; }
   .fam-row { grid-template-columns: 1fr; }
   .fam-card.wide { grid-column: auto; }
   .asset-panel { flex-direction: column; gap: 16px; padding: 36px 28px; text-align: center; }
@@ -686,11 +686,11 @@ span[data-lang].vis { display: inline; }
       <circle cx="90" cy="90" r="18" fill="none" stroke="rgba(212,168,83,0.3)" stroke-width="1"/>
       <circle cx="90" cy="90" r="6" fill="rgba(212,168,83,0.2)" stroke="#d4a853" stroke-width="1"/>
     </svg>
-    <div class="splash-monogram">STR</div>
+    <div class="splash-monogram">SR</div>
   </div>
 
   <div class="splash-content">
-    <p class="splash-eyebrow">Biodata · 2026</p>
+    <p class="splash-eyebrow">Marriage Biodata · 2026</p>
     <h1 class="splash-name">D Sai <em>Thimma Reddy</em></h1>
     <p class="splash-tagline">Software Developer · Capgemini · Bangalore</p>
     <div class="splash-divider"><span>✦</span></div>
@@ -730,9 +730,9 @@ span[data-lang].vis { display: inline; }
   <div class="hero-right">
     <div class="hero-eyebrow">
       <span>
-        <span data-lang="en" class="vis">Biodata · 2026</span>
-        <span data-lang="te"><span lang="te">బయోడేటా · 2026</span></span>
-        <span data-lang="kn"><span lang="kn">ಬಯೋಡಾಟಾ · 2026</span></span>
+        <span data-lang="en" class="vis">Marriage Biodata · 2026</span>
+        <span data-lang="te"><span lang="te">వివాహ బయోడేటా · 2026</span></span>
+        <span data-lang="kn"><span lang="kn">ವಿವಾಹ ಬಯೋಡಾಟಾ · 2026</span></span>
       </span>
     </div>
 
@@ -762,7 +762,7 @@ span[data-lang].vis { display: inline; }
         </span>
       </div>
       <div class="stat-box">
-        <span class="stat-n">21</span>
+        <span class="stat-n">21.5</span>
         <span class="stat-l">
           <span data-lang="en" class="vis">Acres Land</span>
           <span data-lang="te"><span lang="te">ఎకరాల భూమి</span></span>
@@ -1115,7 +1115,7 @@ span[data-lang].vis { display: inline; }
       </div>
     </div>
     <div class="asset-panel">
-      <div class="asset-big">21.5</div>
+      <div class="asset-big">21<sup>.5</sup></div>
       <div class="asset-info">
         <h3>
           <span data-lang="en" class="vis">Acres of Agricultural Land</span>
@@ -1166,11 +1166,16 @@ span[data-lang].vis { display: inline; }
       <span data-lang="kn"><span lang="kn">ಹೆಚ್ಚಿನ ವಿವರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಸಂತೋಷ.</span></span>
     </p>
     <a class="c-phone" href="tel:+917892098558">+91 78920 98558</a>
+    <p class="c-fine">
+      <span data-lang="en" class="vis">All inquiries treated with complete confidentiality</span>
+      <span data-lang="te"><span lang="te">అన్ని విచారణలు గోప్యంగా నిర్వహించబడతాయి</span></span>
+      <span data-lang="kn"><span lang="kn">ಎಲ್ಲಾ ವಿಚಾರಣೆಗಳನ್ನು ಗೌಪ್ಯವಾಗಿ ನಡೆಸಲಾಗುತ್ತದೆ</span></span>
+    </p>
   </div>
 </section>
 
 <div class="footer">
-  <p>D Sai Thimma Reddy · Biodata · 2026</p>
+  <p>D Sai Thimma Reddy · Marriage Biodata · 2026</p>
   <p>Amidyala · Uravakonda · Bangalore</p>
 </div>
 
@@ -1299,120 +1304,115 @@ document.addEventListener('keydown', e => {
 
 /* ── PDF DOWNLOAD ── */
 function downloadPDF() {
-  const w = window.open('', '_blank', 'width=850,height=1100,scrollbars=yes');
-
-  w.document.write(`<!DOCTYPE html>
+  const html = `<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>D Sai Thimma Reddy - Biodata 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<title>D Sai Thimma Reddy — Biodata 2026</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { 
-    font-family: 'DM Sans', sans-serif; 
-    background: #fff; 
-    color: #1c1008; 
-    padding: 45px 55px; 
-    line-height: 1.55;
-    font-size: 13.8px;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 25px;
-    margin-bottom: 35px;
-    border-bottom: 3px solid #b8913a;
-  }
-  .photo {
-    width: 165px;
-    height: 205px;
-    object-fit: cover;
-    border: 5px solid #b8913a;
-    border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-  }
-  .name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 1.05;
-  }
-  .name em { 
-    font-style: italic; 
-    color: #b8913a; 
-    display: block; 
-  }
-  .badge { text-align: right; margin-top: 10px; }
-  .badge .year { 
-    font-family: 'Cormorant Garamond', serif; 
-    font-size: 26px; 
-    color: #b8913a; 
-  }
-  .badge p { 
-    font-size: 11.5px; 
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    color: #8a7060; 
-  }
-  h2 { 
-    font-family: 'Cormorant Garamond', serif; 
-    font-size: 19px; 
-    color: #1e2a25; 
-    margin: 32px 0 12px; 
-    padding-left: 12px; 
-    border-left: 4px solid #b8913a; 
-  }
-  table { 
-    width: 100%; 
-    border-collapse: collapse; 
-    margin-bottom: 18px; 
-  }
-  td { 
-    padding: 11px 14px; 
-    border-bottom: 1px solid #f0e8d8; 
-    vertical-align: top; 
-  }
-  td:first-child { 
-    width: 38%; 
-    font-size: 10.8px; 
-    letter-spacing: 1.8px; 
-    text-transform: uppercase; 
-    color: #8a7060; 
-    font-weight: 500; 
-  }
-  tr:nth-child(even) td { background: #faf5ee; }
-  .footer { 
-    margin-top: 60px; 
-    padding-top: 20px; 
-    border-top: 1px solid #e8ddd0; 
-    display: flex; 
-    justify-content: space-between; 
-    font-size: 10.5px; 
-    letter-spacing: 1.6px; 
-    text-transform: uppercase; 
-    color: #8a7060; 
-  }
-  @media print {
-    body { padding: 40px 48px; }
-    .photo { width: 155px; height: 195px; }
-  }
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'DM Sans', Arial, sans-serif;
+  background: #fff;
+  color: #1c1008;
+  padding: 48px 56px;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+/* header */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  border-bottom: 3px solid #b8913a;
+}
+.name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 46px;
+  font-weight: 400;
+  color: #1c1008;
+  line-height: 1.05;
+}
+.name em { font-style: italic; color: #b8913a; display: block; }
+.subtitle {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #8a7060;
+  margin-top: 8px;
+}
+.badge { text-align: right; }
+.badge .year {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px;
+  color: #b8913a;
+  display: block;
+  margin-bottom: 4px;
+}
+.badge p {
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #8a7060;
+  line-height: 1.9;
+}
+
+/* sections */
+h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #1c1008;
+  margin: 30px 0 11px;
+  padding-left: 12px;
+  border-left: 4px solid #b8913a;
+  letter-spacing: 0.3px;
+}
+table { width: 100%; border-collapse: collapse; margin-bottom: 4px; }
+td { padding: 10px 13px; vertical-align: top; border-bottom: 1px solid #f0e6d8; }
+td:first-child {
+  width: 36%;
+  font-size: 10.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a7060;
+  font-weight: 500;
+}
+tr:nth-child(even) td { background: #faf5ee; }
+
+.footer {
+  margin-top: 44px;
+  padding-top: 16px;
+  border-top: 1px solid #e8ddd0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #b8913a;
+}
+@media print {
+  body { padding: 36px 44px; }
+  @page { margin: 0.6in 0.7in; }
+}
 </style>
 </head>
 <body>
 
-<div class="header">
+<div class="top">
   <div>
     <div class="name">D Sai <em>Thimma Reddy</em></div>
-    <p style="font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#8a7060;margin-top:8px;">
-      Biodata • 2026
-    </p>
+    <p class="subtitle">Marriage Biodata · 2026</p>
   </div>
-  <img src="./assests/WhatsApp Image 2026-05-13 at 7.51.08 AM.jpeg" 
-       class="photo" 
-       alt="D Sai Thimma Reddy"
-       onerror="this.style.display='none';">
+  <div class="badge">
+    <span class="year">2026</span>
+    <p>Software Developer<br>Capgemini · Bangalore<br>₹13 LPA Fixed</p>
+  </div>
 </div>
 
 <h2>Personal Details</h2>
@@ -1437,38 +1437,72 @@ function downloadPDF() {
   <tr><td>Occupation</td><td>Software Developer</td></tr>
   <tr><td>Company</td><td>Capgemini, Bangalore</td></tr>
   <tr><td>Experience</td><td>4+ Years</td></tr>
-  <tr><td>Annual CTC</td><td>₹13 LPA (Fixed)</td></tr>
+  <tr><td>Annual CTC</td><td>&#8377;13 LPA (Fixed)</td></tr>
 </table>
 
 <h2>Family Details</h2>
 <table>
   <tr><td>Father</td><td>D Sreenivasa Reddy</td></tr>
   <tr><td>Mother</td><td>Annapurna D</td></tr>
-  <tr><td>Elder Sister</td><td>Anuswetha D <span style="font-size:12px;color:#8a7060;">— Married & Happily Settled</span></td></tr>
+  <tr><td>Elder Sister</td><td>Anuswetha D — Software Developer, Accenture<br>
+    <span style="font-size:11.5px;color:#8a7060;">Married &amp; Happily Settled</span></td></tr>
 </table>
 
-<h2>Assets & Property</h2>
+<h2>Assets &amp; Property</h2>
 <table>
-  <tr><td>Land</td><td>21.5 Acres Agricultural Land</td></tr>
+  <tr><td>Agricultural Land</td><td>21.5 Acres — Family Owned</td></tr>
   <tr><td>Location</td><td>Amidyala Village, Uravakonda</td></tr>
-  <tr><td>Ownership</td><td>Family Owned</td></tr>
 </table>
 
 <h2>Contact</h2>
 <table>
-  <tr><td>Phone Number</td><td>+91 78920 98558</td></tr>
+  <tr><td>Phone</td><td>+91 78920 98558</td></tr>
 </table>
 
 <div class="footer">
-  <span>D Sai Thimma Reddy • Biodata 2026</span>
-  <span>Amidyala • Uravakonda • Bangalore</span>
+  <span>D Sai Thimma Reddy &middot; Marriage Biodata 2026</span>
+  <span>Amidyala &middot; Uravakonda &middot; Bangalore</span>
 </div>
 
-<script>window.onload = function() { window.print(); }<\/script>
 </body>
-</html>`);
+</html>`;
 
-  w.document.close();
+  // Create a Blob and trigger an instant download — no popup, no blank page
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = 'DSaiThimmaReddy_Biodata_2026.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+
+  // Show a small toast hint
+  showToast('File downloaded! Open it in your browser, then press Ctrl+P → Save as PDF.');
+}
+
+/* ── TOAST helper ── */
+function showToast(msg) {
+  let t = document.getElementById('dlToast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'dlToast';
+    t.style.cssText = `
+      position:fixed; bottom:32px; left:50%; transform:translateX(-50%);
+      background:#1c1008; color:#e8c87a;
+      padding:14px 28px; font-size:12px; letter-spacing:1px;
+      border:1px solid rgba(212,168,83,0.3); border-radius:2px;
+      z-index:99998; max-width:90vw; text-align:center;
+      box-shadow:0 8px 32px rgba(0,0,0,0.4);
+      transition: opacity 0.4s;
+    `;
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => { t.style.opacity = '0'; }, 5000);
 }
 </script>
 </body>
