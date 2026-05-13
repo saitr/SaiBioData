@@ -731,8 +731,8 @@ span[data-lang].vis { display: inline; }
     <div class="hero-eyebrow">
       <span>
         <span data-lang="en" class="vis">Biodata · 2026</span>
-        <span data-lang="te"><span lang="te">వివాహ బయోడేటా · 2026</span></span>
-        <span data-lang="kn"><span lang="kn">ವಿವಾಹ ಬಯೋಡಾಟಾ · 2026</span></span>
+        <span data-lang="te"><span lang="te">బయోడేటా · 2026</span></span>
+        <span data-lang="kn"><span lang="kn">ಬಯೋಡಾಟಾ · 2026</span></span>
       </span>
     </div>
 
@@ -1115,7 +1115,7 @@ span[data-lang].vis { display: inline; }
       </div>
     </div>
     <div class="asset-panel">
-      <div class="asset-big">21<sup>.5</sup></div>
+      <div class="asset-big">21.5</div>
       <div class="asset-info">
         <h3>
           <span data-lang="en" class="vis">Acres of Agricultural Land</span>
@@ -1160,17 +1160,7 @@ span[data-lang].vis { display: inline; }
       <span data-lang="te"><span lang="te">మరింత చర్చించడానికి<br><em>సంప్రదించండి</em></span></span>
       <span data-lang="kn"><span lang="kn">ಇನ್ನಷ್ಟು ಮಾತನಾಡಲు<br><em>ಸಂಪರ್ಕಿಸಿ</em></span></span>
     </h2>
-    <p class="c-desc">
-      <span data-lang="en" class="vis">We'd be happy to share more details and connect families.</span>
-      <span data-lang="te"><span lang="te">మేము ఆనందంగా మరింత వివరాలు పంచుకుంటాం.</span></span>
-      <span data-lang="kn"><span lang="kn">ಹೆಚ್ಚಿನ ವಿವರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಸಂತೋಷ.</span></span>
-    </p>
     <a class="c-phone" href="tel:+917892098558">+91 78920 98558</a>
-    <p class="c-fine">
-      <span data-lang="en" class="vis">All inquiries treated with complete confidentiality</span>
-      <span data-lang="te"><span lang="te">అన్ని విచారణలు గోప్యంగా నిర్వహించబడతాయి</span></span>
-      <span data-lang="kn"><span lang="kn">ಎಲ್ಲಾ ವಿಚಾರಣೆಗಳನ್ನು ಗೌಪ್ಯವಾಗಿ ನಡೆಸಲಾಗುತ್ತದೆ</span></span>
-    </p>
   </div>
 </section>
 
@@ -1303,188 +1293,14 @@ document.addEventListener('keydown', e => {
 });
 
 /* ── PDF DOWNLOAD ── */
+
 function downloadPDF() {
-  const html = `<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>D Sai Thimma Reddy - Biodata 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { 
-    font-family: 'DM Sans', sans-serif; 
-    background: #fff; 
-    color: #1c1008; 
-    padding: 45px 55px; 
-    line-height: 1.55;
-    font-size: 13.8px;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 25px;
-    margin-bottom: 35px;
-    border-bottom: 3px solid #b8913a;
-  }
-  .photo {
-    width: 165px;
-    height: 205px;
-    object-fit: cover;
-    border: 5px solid #b8913a;
-    border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-  }
-  .name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 1.05;
-  }
-  .name em { 
-    font-style: italic; 
-    color: #b8913a; 
-    display: block; 
-  }
-  .badge { text-align: right; margin-top: 10px; }
-  .badge .year { 
-    font-family: 'Cormorant Garamond', serif; 
-    font-size: 26px; 
-    color: #b8913a; 
-  }
-  .badge p { 
-    font-size: 11.5px; 
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    color: #8a7060; 
-  }
-  h2 { 
-    font-family: 'Cormorant Garamond', serif; 
-    font-size: 19px; 
-    color: #1e2a25; 
-    margin: 32px 0 12px; 
-    padding-left: 12px; 
-    border-left: 4px solid #b8913a; 
-  }
-  table { 
-    width: 100%; 
-    border-collapse: collapse; 
-    margin-bottom: 18px; 
-  }
-  td { 
-    padding: 11px 14px; 
-    border-bottom: 1px solid #f0e8d8; 
-    vertical-align: top; 
-  }
-  td:first-child { 
-    width: 38%; 
-    font-size: 10.8px; 
-    letter-spacing: 1.8px; 
-    text-transform: uppercase; 
-    color: #8a7060; 
-    font-weight: 500; 
-  }
-  tr:nth-child(even) td { background: #faf5ee; }
-  .footer { 
-    margin-top: 60px; 
-    padding-top: 20px; 
-    border-top: 1px solid #e8ddd0; 
-    display: flex; 
-    justify-content: space-between; 
-    font-size: 10.5px; 
-    letter-spacing: 1.6px; 
-    text-transform: uppercase; 
-    color: #8a7060; 
-  }
-  @media print {
-    body { padding: 40px 48px; }
-    .photo { width: 155px; height: 195px; }
-  }
-</style>
-</head>
-<body>
-
-<div class="header">
-  <div>
-    <div class="name">D Sai <em>Thimma Reddy</em></div>
-    <p style="font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#8a7060;margin-top:8px;">
-      Biodata • 2026
-    </p>
-  </div>
-  <img src="./assests/WhatsApp Image 2026-05-13 at 7.51.08 AM.jpeg" 
-       class="photo" 
-       alt="D Sai Thimma Reddy"
-       onerror="this.style.display='none';">
-</div>
-
-<h2>Personal Details</h2>
-<table>
-  <tr><td>Full Name</td><td>D Sai Thimma Reddy</td></tr>
-  <tr><td>Date of Birth</td><td>13 January 1998</td></tr>
-  <tr><td>Time of Birth</td><td>10:40 PM</td></tr>
-  <tr><td>Place of Birth</td><td>Uravakonda, Andhra Pradesh</td></tr>
-  <tr><td>Native Village</td><td>Amidyala</td></tr>
-  <tr><td>Age</td><td>27 Years</td></tr>
-</table>
-
-<h2>Astrological Details</h2>
-<table>
-  <tr><td>Rasi</td><td>Karkataka (Cancer)</td></tr>
-  <tr><td>Nakshatra</td><td>Punarvasu — 4th Pada</td></tr>
-  <tr><td>Gothra</td><td>Palaadugula</td></tr>
-</table>
-
-<h2>Professional Details</h2>
-<table>
-  <tr><td>Occupation</td><td>Software Developer</td></tr>
-  <tr><td>Company</td><td>Capgemini, Bangalore</td></tr>
-  <tr><td>Experience</td><td>4+ Years</td></tr>
-  <tr><td>Annual CTC</td><td>₹13 LPA (Fixed)</td></tr>
-</table>
-
-<h2>Family Details</h2>
-<table>
-  <tr><td>Father</td><td>D Sreenivasa Reddy</td></tr>
-  <tr><td>Mother</td><td>Annapurna D</td></tr>
-  <tr><td>Elder Sister</td><td>Anuswetha D <span style="font-size:12px;color:#8a7060;">— Married & Happily Settled</span></td></tr>
-</table>
-
-<h2>Assets & Property</h2>
-<table>
-  <tr><td>Land</td><td>21.5 Acres Agricultural Land</td></tr>
-  <tr><td>Location</td><td>Amidyala Village, Uravakonda</td></tr>
-  <tr><td>Ownership</td><td>Family Owned</td></tr>
-</table>
-
-<h2>Contact</h2>
-<table>
-  <tr><td>Phone Number</td><td>+91 78920 98558</td></tr>
-</table>
-
-<div class="footer">
-  <span>D Sai Thimma Reddy • Biodata 2026</span>
-  <span>Amidyala • Uravakonda • Bangalore</span>
-</div>
-
-
-<script>window.onload = function () {setTimeout(() => {window.print();}, 500);}<\/script>
-</body>
-</html>`;
-
-  // Create a Blob and trigger an instant download — no popup, no blank page
-  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = 'DSaiThimmaReddy_Biodata_2026.html';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
-
-  // Show a small toast hint
-  showToast('File downloaded! Open it in your browser, then press Ctrl+P → Save as PDF.');
+    const link = document.createElement('a');
+    link.href = "assests/D Sai Thimma Reddy - Marriage Biodata 2026.pdf";
+    link.download = "D Sai Thimma Reddy - Marriage Biodata 2026.pdf";   // Name shown when downloading
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 /* ── TOAST helper ── */
